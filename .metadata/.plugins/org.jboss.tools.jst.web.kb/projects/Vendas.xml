@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/junit-4.11.jar"/>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/all-themes-1.0.10.jar"/>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/mysql-connector-java-5.1.39-bin.jar"/>
+  <path value="/Vendas/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="Vendas"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/javax.faces-2.2.9.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/META-INF/html_basic.tld" project="Vendas"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/META-INF/jsf_core.tld" project="Vendas"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/META-INF/mojarra_ext.taglib.xml" project="Vendas"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/META-INF/mojarra_ext.tld" project="Vendas"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/primefaces-5.0.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.0.jar/META-INF/faces-config.xml" project="Vendas"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.0.jar/META-INF/primefaces-p.taglib.xml" project="Vendas"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.0.jar/META-INF/primefaces-pm.taglib.xml" project="Vendas"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/hamcrest-core-1.3.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://primefaces.org/ui">
+   <prefix>p</prefix>
+  </uri>
+ </uris>
+</kb-project>
