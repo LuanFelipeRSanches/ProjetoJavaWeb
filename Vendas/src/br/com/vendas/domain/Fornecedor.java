@@ -4,6 +4,10 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_fornecedores") // nome da tabela
+
+@NamedQueries({ @NamedQuery(name = "Fornecedor.listar", query = "SELECT fornecedor FROM  Fornecedor fornecedor"),
+		@NamedQuery(name = "Fornecedor.buscarPorCodigo", query = "SELECT fornecedor FROM  Fornecedor fornecedor WHERE fornecedor.codigo =  :codigo") })
+
 public class Fornecedor {
 
 	@GeneratedValue(strategy = GenerationType.AUTO) // auto increment
@@ -31,5 +35,9 @@ public class Fornecedor {
 		this.descricao = descricao;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Fornecedor [codigo=" + codigo + ", descricao=" + descricao + "]";
+	}
+
 }

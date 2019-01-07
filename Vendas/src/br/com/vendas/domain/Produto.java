@@ -6,6 +6,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_produtos")
+
+@NamedQueries({ @NamedQuery(name = "Produto.listar", query = "SELECT produto FROM  Produto produto"),
+		@NamedQuery(name = "Produto.buscarPorCodigo", query = "SELECT produto FROM  Produto produto WHERE produto.codigo =  :codigo") })
 public class Produto {
 
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -64,6 +67,12 @@ public class Produto {
 
 	public void setFornecedor(Fornecedor fornecedor) {
 		this.fornecedor = fornecedor;
+	}
+
+	@Override
+	public String toString() {
+		return "Produto [codigo=" + codigo + ", descricao=" + descricao + ", preco=" + preco + ", quantidade="
+				+ quantidade + ", fornecedor=" + fornecedor + "]";
 	}
 
 }

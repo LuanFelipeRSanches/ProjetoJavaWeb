@@ -30,7 +30,7 @@
 		<property name="show_sql">true</property>
 
 		<!--Criação das Tabelas -->
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">validate</property>
 
 		<!-- Gera as tabelas -->
 		<mapping class="br.com.vendas.domain.Produto" />

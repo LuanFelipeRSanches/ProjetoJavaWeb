@@ -1,0 +1,23 @@
+package br.com.vendas.test;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import br.com.vendas.DAO.FuncionariosDAO;
+import br.com.vendas.domain.Funcionario;
+
+public class ProdutosDAOTeste {
+	@Test
+	@Ignore
+	public void salvar() throws Exception {
+		Funcionario f1 = new Funcionario();
+
+		f1.setNome("Teste 2");
+		f1.setCpf("12558484848484");
+		f1.setSenha("123");
+		f1.setFuncao("Diretor");
+		FuncionariosDAO dao = new FuncionariosDAO();
+
+		dao.salvar(f1);
+}
+}

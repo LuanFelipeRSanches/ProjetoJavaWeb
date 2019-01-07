@@ -1,0 +1,18 @@
+package br.com.vendas.test;
+
+import org.junit.Test;
+
+import br.com.vendas.DAO.FornecedoresDAO;
+import br.com.vendas.domain.Fornecedor;
+
+public class FornecedorDAOTest {
+	@Test
+	public void salvar() throws Exception {
+		Fornecedor f1 = new Fornecedor();
+		f1.setDescricao("TESTE");
+
+		FornecedoresDAO dao = new FornecedoresDAO();
+		dao.salvar(f1);
+
+	}
+}

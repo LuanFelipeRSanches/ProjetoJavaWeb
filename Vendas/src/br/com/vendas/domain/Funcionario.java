@@ -4,6 +4,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_funcionarios")
+@NamedQueries({ @NamedQuery(name = "Funcionario.listar", query = "SELECT funcionario FROM  Funcionario funcionario"),
+		@NamedQuery(name = "Funcionario.buscarPorCodigo", query = "SELECT funcionario FROM  Funcionario funcionario WHERE funcionario.codigo =  :codigo") })
+
 public class Funcionario {
 
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -62,6 +65,12 @@ public class Funcionario {
 
 	public void setFuncao(String funcao) {
 		this.funcao = funcao;
+	}
+
+	@Override
+	public String toString() {
+		return "Funcionario [codigo=" + codigo + ", nome=" + nome + ", cpf=" + cpf + ", senha=" + senha + ", funcao="
+				+ funcao + "]";
 	}
 
 }
