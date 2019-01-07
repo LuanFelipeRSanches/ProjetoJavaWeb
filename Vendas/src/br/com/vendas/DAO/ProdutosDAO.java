@@ -6,7 +6,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import br.com.vendas.domain.Funcionario;
 import br.com.vendas.domain.Produto;
 import br.com.vendas.util.HibernateUtil;
 
@@ -74,14 +73,14 @@ public class ProdutosDAO {
 		return produto;
 	}
 
-	public void excluir(Funcionario funcionario) {
+	public void excluir(Produto produto) {
 		Session sessao = HibernateUtil.getSessionFactory().openSession();
 
 		Transaction transacao = null;
 
 		try {
 			transacao = sessao.beginTransaction();
-			sessao.delete(funcionario);
+			sessao.delete(produto);
 			transacao.commit();
 		} catch (RuntimeException ex) {
 			if (transacao != null) {
@@ -96,7 +95,7 @@ public class ProdutosDAO {
 
 	}
 
-	public void editar(Funcionario funcionario) {
+	public void editar(Produto produto) {
 		Session sessao = HibernateUtil.getSessionFactory().openSession();
 
 		Transaction transacao = null;
@@ -104,7 +103,7 @@ public class ProdutosDAO {
 		try {
 			transacao = sessao.beginTransaction();
 
-			sessao.update(funcionario);
+			sessao.update(produto);
 			transacao.commit();
 
 		} catch (RuntimeException ex) {

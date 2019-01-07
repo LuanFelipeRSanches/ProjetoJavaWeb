@@ -1,0 +1,49 @@
+package br.com.vendas.test;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import br.com.vendas.DAO.FornecedoresDAO;
+import br.com.vendas.DAO.ProdutosDAO;
+import br.com.vendas.domain.Fornecedor;
+import br.com.vendas.domain.Produto;
+
+public class ProdutosDAOTeste {
+	@Test
+	@Ignore
+	public void salvar() throws Exception {
+		FornecedoresDAO dao = new FornecedoresDAO();
+		Fornecedor fornecedor = dao.buscarPorCodigo(2L);
+
+		Produto p1 = new Produto();
+
+		p1.setDescricao("Produto Teste");
+		p1.setPreco(new BigDecimal(12.99D));
+		p1.setQuantidade(2);
+		p1.setFornecedor(fornecedor);
+		ProdutosDAO pdao = new ProdutosDAO();
+
+		pdao.salvar(p1);
+	}
+
+	@Test
+	@Ignore
+	public void listar() {
+		ProdutosDAO dao = new ProdutosDAO();
+		List<Produto> produto = dao.listar();
+		for (Produto produtos : produto) {
+			System.out.println(produtos);
+		}
+
+	}
+
+	@Test
+	public void buscarPorCodigo() {
+		ProdutosDAO dao = new ProdutosDAO();
+		Produto p1 = dao.buscarPorCodigo(1L);
+		System.out.println(p1);
+	}
+}

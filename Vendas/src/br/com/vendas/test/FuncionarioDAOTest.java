@@ -52,7 +52,6 @@ public class FuncionarioDAOTest {
 	}
 
 	@Test
-	@Ignore
 	public void editar() {
 		FuncionariosDAO dao = new FuncionariosDAO();
 		Funcionario funcionario = dao.buscarPorCodigo(3L);

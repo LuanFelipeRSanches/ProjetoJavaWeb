@@ -16,13 +16,13 @@ public class ProdutosDAOTeste {
 	@Ignore
 	public void salvar() throws Exception {
 		FornecedoresDAO dao = new FornecedoresDAO();
-		Fornecedor fornecedor = dao.buscarPorCodigo(2L);
+		Fornecedor fornecedor = dao.buscarPorCodigo(1L);
 
 		Produto p1 = new Produto();
 
-		p1.setDescricao("Produto Teste");
-		p1.setPreco(new BigDecimal(12.99D));
-		p1.setQuantidade(2);
+		p1.setDescricao("Produto Teste 2");
+		p1.setPreco(new BigDecimal(12.88D));
+		p1.setQuantidade(4);
 		p1.setFornecedor(fornecedor);
 		ProdutosDAO pdao = new ProdutosDAO();
 
@@ -34,16 +34,34 @@ public class ProdutosDAOTeste {
 	public void listar() {
 		ProdutosDAO dao = new ProdutosDAO();
 		List<Produto> produto = dao.listar();
-		for (Produto produtos : produto) {
-			System.out.println(produtos);
-		}
+		System.out.println(produto);
 
 	}
 
 	@Test
+	@Ignore
 	public void buscarPorCodigo() {
 		ProdutosDAO dao = new ProdutosDAO();
 		Produto p1 = dao.buscarPorCodigo(1L);
 		System.out.println(p1);
+	}
+
+	@Test
+	@Ignore
+	public void excluir() {
+		ProdutosDAO dao = new ProdutosDAO();
+		Produto produto = dao.buscarPorCodigo(2L);
+		dao.excluir(produto);
+	}
+
+	@Test
+	@Ignore
+	public void editar() {
+		ProdutosDAO pdao = new ProdutosDAO();
+		Produto pro = pdao.buscarPorCodigo(1L);
+		pro.setDescricao("Teste Editado");
+		pro.setPreco(new BigDecimal(14.99D));
+		pro.setQuantidade(6);
+		pdao.editar(pro);
 	}
 }

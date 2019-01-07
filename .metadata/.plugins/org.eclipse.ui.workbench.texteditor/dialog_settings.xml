@@ -6,6 +6,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="pro"/>
 			<item value="for"/>
 			<item value="F"/>
 			<item value="ws"/>
