@@ -34,6 +34,19 @@
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
+  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/primefaces-6.2.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"/>
+    </library>
+   </libraries>
+  </path>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/jandex-1.1.0.Final.jar"/>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/all-themes-1.0.10.jar"/>
   <path value="/Vendas/WebContent/WEB-INF/faces-config.xml">
@@ -63,6 +76,8 @@
   </path>
  </paths>
  <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
   <el/>
  </validation>
  <aliases/>

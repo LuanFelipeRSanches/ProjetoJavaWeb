@@ -1,3 +1,0 @@
-127.0.0.1 - - [07/Jan/2019:14:51:32 -0300] "GET / HTTP/1.1" 404 1074
-0:0:0:0:0:0:0:1 - - [07/Jan/2019:14:51:43 -0300] "GET /Vendas/WEB-INF/classes/br/com/vendas/domain/Fornecedor.java HTTP/1.1" 404 1047
-0:0:0:0:0:0:0:1 - - [07/Jan/2019:14:51:44 -0300] "GET /favicon.ico HTTP/1.1" 404 1085
