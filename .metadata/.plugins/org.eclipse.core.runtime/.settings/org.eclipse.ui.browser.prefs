@@ -1,4 +1,4 @@
-browser-choice=1
-browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="1">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
+browser-choice=0
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
 eclipse.preferences.version=1
-internalWebBrowserHistory=http\://localhost\:8080/Vendas/faces/template/template.xhtml|*|
+internalWebBrowserHistory=http\://localhost\:8080/Vendas/faces/pages/fornecedorCadastro.xhtml?forcod\=1|*|http\://localhost\:8080/Vendas/faces/pages/fornecedorPesquisa.xhtml|*|http\://localhost\:8080/Vendas/faces/pages/fornecedorCadastro.xhtml|*|http\://localhost\:8080/Vendas/faces/pages/funcionarioPesquisa.xhtml|*|http\://localhost\:8080/Vendas/faces/pages/funcionarioCadastro.xhtml|*|http\://localhost\:8080/Vendas/faces/pages/funcionarioPesquisa.xhtml;jsessionid\=0CDA5FC96DC11C2C51115608013E6F8C|*|http\://localhost\:8080/Vendas/faces/template/template.xhtml|*|

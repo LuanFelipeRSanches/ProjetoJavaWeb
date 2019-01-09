@@ -5,6 +5,9 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+		<ui:define name="metadata"/>
+	
 <h:head>
 	<h:outputStylesheet library="css" name="style.css" />
 	<h:outputScript library="js" name="scripts.js" />
@@ -12,6 +15,8 @@
 	<title>Insert title here</title>
 </h:head>
 <h:body>
+	<p:growl id="msGlobal" />
+
 	<p:layout fullPage="true">
 		<p:layoutUnit position="north" header="Sistema de Vendas"
 			resizable="false" closable="false" collapsible="false">
@@ -35,7 +40,8 @@
 						<p:menuitem value="Produtos" />
 						<p:menuitem value="Fornecedores"
 							outcome="/pages/fornecedorPesquisa.xhtml" />
-						<p:menuitem value="Funcionario" />
+						<p:menuitem value="Funcionario"
+							outcome="/pages/funcionarioPesquisa.xhtml" />
 					</p:submenu>
 					<p:submenu label="Vendas"></p:submenu>
 					<p:submenu label="Ajuda"></p:submenu>

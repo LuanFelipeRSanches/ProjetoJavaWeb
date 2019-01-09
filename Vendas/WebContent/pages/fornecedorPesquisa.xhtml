@@ -5,9 +5,18 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui" template="/template/template.xhtml">
+	<ui:define name="metadata">
+		<f:metadata>
+			<!--CARREGA A TABELA-->
+			<f:event listener="#{MBFornecedores.prepararPesquisa()}"
+				type="preRenderView"></f:event>
+		</f:metadata>
+	</ui:define>
 
 	<ui:define name="conteudo">
+
 		<h:form>
+
 			<p:toolbar>
 				<f:facet name="left">
 					<h:outputText value="Fornecedores" />
@@ -19,12 +28,34 @@
 				<p:button value="Buscar" />
 				<p:button value="Novo" outcome="/pages/fornecedorCadastro.xhtml" />
 			</h:panelGrid>
-			<p:dataTable emptyMessage="Nenhum Registro Encontrado">
+			<!-- TABELA -->
+			<p:dataTable emptyMessage="Nenhum Registro Encontrado"
+				value="#{MBFornecedores.itens}"
+				filteredValue="#{MBFornecedores.itensFiltrados}" var="fornecedor"
+				rows="10" paginator="true">
 				<p:column headerText="Código">
+					<h:outputText value="#{fornecedor.codigo}" />
 				</p:column>
-				<p:column headerText="Descrição">
+				<p:column headerText="Descrição" filterBy="#{fornecedor.descricao}"
+					sortBy="#{fornecedor.descricao}">
+					<h:outputText value="#{fornecedor.descricao
+					}" />
+
 				</p:column>
+
 				<p:column headerText="Opçoẽs">
+
+					<p:button icon="ui-icon-pencil"
+						outcome="/pages/fornecedorCadastro.xhtml">
+						<f:param name="forcod" value="#{fornecedor.codigo}" />
+					</p:button>
+
+					<p:button icon="ui-icon-trash"
+						outcome="/pages/fornecedorCadastro.xhtml">
+						<f:param name="forcod" value="#{fornecedor.codigo}" />
+
+					</p:button>
+
 				</p:column>
 			</p:dataTable>
 		</h:form>

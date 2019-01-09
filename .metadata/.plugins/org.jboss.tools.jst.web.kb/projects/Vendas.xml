@@ -34,19 +34,6 @@
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
-  <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/primefaces-6.2.jar">
-   <libraries>
-    <library class="faces-config">
-     <id class="model-object"/>
-    </library>
-    <library class="facelet">
-     <id class="model-object"/>
-    </library>
-    <library class="facelet">
-     <id class="model-object"/>
-    </library>
-   </libraries>
-  </path>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/jandex-1.1.0.Final.jar"/>
   <path value="/home/asus/eclipse-workspace/Sistema Completo Java/Vendas/WebContent/WEB-INF/lib/all-themes-1.0.10.jar"/>
   <path value="/Vendas/WebContent/WEB-INF/faces-config.xml">
@@ -78,9 +65,44 @@
  <validation>
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
-  <el/>
+  <el>
+   <linked-el length="23" name="%0" offset="1667" path="%1"/>
+   <linked-el length="23" name="%0" offset="1279" path="%1"/>
+   <linked-el length="43" name="%0" offset="869" path="%2"/>
+   <linked-el length="32" name="%0" offset="1457" path="%1"/>
+   <linked-el length="25" name="%0" offset="1405" path="%1"/>
+   <linked-el length="31" name="%0" offset="1367" path="%1"/>
+   <linked-el length="23" name="%0" offset="1831" path="%1"/>
+   <linked-el length="40" name="%0" offset="733" path="%2"/>
+   <linked-el length="30" name="%3" offset="1091" path="%1"/>
+   <linked-el length="35" name="%3" offset="1135" path="%1"/>
+   <linked-el length="43" name="%3" offset="869" path="%2"/>
+   <linked-el length="27" name="%3" offset="1004" path="%2"/>
+   <linked-el length="40" name="%3" offset="733" path="%2"/>
+   <linked-el length="43" name="%3" offset="505" path="%1"/>
+   <linked-el length="29" name="%3" offset="1118" path="%2"/>
+   <linked-el length="30" name="%4" offset="1091" path="%1"/>
+   <linked-el length="23" name="%4" offset="1667" path="%1"/>
+   <linked-el length="23" name="%4" offset="1279" path="%1"/>
+   <linked-el length="23" name="%4" offset="1831" path="%1"/>
+   <linked-el length="40" name="%4" offset="733" path="%2"/>
+   <linked-el length="29" name="%4" offset="1118" path="%2"/>
+   <linked-el length="35" name="%4" offset="1135" path="%1"/>
+   <linked-el length="43" name="%4" offset="869" path="%2"/>
+   <linked-el length="32" name="%4" offset="1457" path="%1"/>
+   <linked-el length="25" name="%4" offset="1405" path="%1"/>
+   <linked-el length="31" name="%4" offset="1367" path="%1"/>
+   <linked-el length="27" name="%4" offset="1004" path="%2"/>
+   <linked-el length="43" name="%4" offset="505" path="%1"/>
+  </el>
  </validation>
- <aliases/>
+ <aliases>
+  <alias path="/Vendas/src/br/com/vendas/domain/Fornecedor.java" value="%0"/>
+  <alias path="/Vendas/WebContent/pages/fornecedorCadastro.xhtml" value="%2"/>
+  <alias path="/Vendas/WebContent/pages/fornecedorPesquisa.xhtml" value="%1"/>
+  <alias path="/Vendas/src/br/com/vendas/Bean/FornecedoresBean.java" value="%3"/>
+  <alias path="MBFornecedores" value="%4"/>
+ </aliases>
  <includes/>
  <uris>
   <uri value="http://java.sun.com/jsf/core">
